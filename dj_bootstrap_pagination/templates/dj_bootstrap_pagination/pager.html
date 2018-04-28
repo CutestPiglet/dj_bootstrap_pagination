@@ -1,0 +1,10 @@
+{% load i18n %}
+  
+<ul class="pager">
+    {% if pager.has_previous %}
+        <li><a href="?{{ pager.page_number_query_string }}={{ pager.previous_page_number }}">{% trans "Previous Page" %}</a></li>
+    {% endif %}         
+    {% if pager.has_next %}
+        <li><a href="?{{ pager.page_number_query_string }}={{ pager.next_page_number }}">{% trans "Next Page" %}</a></li>
+    {% endif %}         
+</ul>

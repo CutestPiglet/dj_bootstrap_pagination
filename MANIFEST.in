@@ -1,0 +1,2 @@
+include README.md
+graft dj_bootstrap_pagination/templates
